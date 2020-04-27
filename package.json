@@ -12,7 +12,7 @@
     "dev:start": "npm-run-all build start",
     "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
     "start": "node .",
-    "test": "jest"
+    "test": "jest --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +30,7 @@
     "@types/moxios": "^0.4.9",
     "@types/node": "^13.13.2",
     "@types/shelljs": "^0.8.7",
+    "@types/supertest": "^2.0.8",
     "fs-extra": "^9.0.0",
     "jest": "^25.4.0",
     "moxios": "^0.4.0",
